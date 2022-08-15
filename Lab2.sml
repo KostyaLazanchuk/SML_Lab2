@@ -1,7 +1,5 @@
 datatype date = date of int * int * int
 
-exception InvalidArg
-
 (*task 1*)
 fun is_older (date(year1,month1,day1) : date, date(year2,month2,day2) : date) =
     if year1 < year2 then true
